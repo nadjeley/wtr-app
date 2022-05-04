@@ -15,7 +15,7 @@ body {
   background-image: url(./pics/sky.jpg);
   background-size: cover;
   background-position: bottom;
-  transition: 0.1 ease;
+  transition: 0.1s ease;
 }
 
 .App.cold {
@@ -121,9 +121,9 @@ h4{
   background-color: white;
   /**margin: 15px auto;*/
   height:230px;
-  
+  opacity: 0.5;
   padding-left: 70px;
-  width:1540px;
+  width:1570px;
   color:black;
   
   font-weight: 200;
@@ -134,9 +134,9 @@ h4{
   
 }
 .temp{
-  font-weight: 900;
-  padding-left:240px;
-  font-size: 100px;
+  font-weight: 700;
+  padding-left:290px;
+  font-size: 95px;
   margin-top:-10px;
 }
 .box{
@@ -147,7 +147,7 @@ h4{
   justify-content: space-between;
 }
 .description{
-  font-size:30px;
+  font-size:25px;
   margin-top:-70px;
   margin-left:-28px;
 }
