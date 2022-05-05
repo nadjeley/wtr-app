@@ -63,6 +63,7 @@ function App() {
       :(weather.weather[0].main == 'Drizzle') ? 'App drizzle'
       :(weather.weather[0].main == 'Clouds') ? 'App cloud'
       :(weather.weather[0].main == 'Dust' && weather.weather[0].main != 'Haze') ? 'App dust'
+      :(weather.weather[0].main == 'Mist') ? 'App mist'
       :'App'}>
       
       <main>
@@ -103,9 +104,9 @@ function App() {
             <div className= "description">{capitalizeFirstLetter(weather.weather[0].description)}</div>
             <div className= "box">
               
-              <div className= "pressure"><h5>{weather.main.pressure} mbar</h5><br/>Pressure</div>
+              <div className= "pressure"><h5>{weather.main.pressure} hPa</h5><br/>Pressure</div>
               <div className= "humidity"><h5>{weather.main.humidity} %</h5> <br/>Humidity</div>
-              <div className="speed"><h5>{weather.wind.speed} kmph</h5><br/>Windspeed</div>
+              <div className="speed"><h5>{weather.wind.speed} m/s</h5><br/>Windspeed</div>
             </div>
               
           </div>
