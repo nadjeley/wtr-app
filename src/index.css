@@ -12,9 +12,10 @@ body {
 }
 
 .App {
+  max-width: 100%;
   background-image: url(./pics/sky.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom;  
   transition: 0.1s ease;
 }
 
@@ -65,8 +66,6 @@ main {
   display:flex;
   justify-content: center;
   align-items: center;
- 
-
 }
 
 h4{
@@ -171,3 +170,61 @@ h5{
 .speed{
   padding-right:60px;
 }
+
+@media all and (max-width: 950px) {
+  .App {
+    background-image: url(./pics/sky.jpg);
+    background-size: contain;
+    background-position: bottom;
+    transition: 0.1s ease;
+  }
+
+  .search-box .search-bar {
+    display:block;
+  
+    padding:15px;
+    appearance: none;
+    background: none;
+    border: none;
+    width:50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 16px 16px;
+   
+    margin-left:200px;
+    margin-bottom:-70px;
+    color: rgb(32, 31, 31);
+    font-size: 20px;
+  
+    transition: 0.4s ease;
+  }
+
+  .weather-box {
+  
+    background-color: white;
+    /**margin: 15px auto;*/
+    height:230px;
+    opacity: 0.5;
+    padding-left: 70px;
+    width:950px;
+    color:black;
+    
+    font-weight: 200;
+    margin-top:340px;
+    margin-left:-50px;
+    
+    padding-top:29px;
+    
+  }
+  .pressure{
+    display: none;
+   
+  }
+  .humidity{
+    display: none;    
+  }
+  
+  .speed{
+    display: none;  }
+
+}
+
