@@ -174,9 +174,10 @@ h5{
 @media all and (max-width: 950px) {
   .App {
     background-image: url(./pics/sky.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     transition: 0.1s ease;
+    
   }
 
   .search-box .search-bar {
